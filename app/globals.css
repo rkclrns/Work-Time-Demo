@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+*{box-sizing:border-box}html{scroll-behavior:smooth}html,body{margin:0;background:#f2f3f4;color:#171a1d;font-family:Inter,Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer;transition:transform .22s ease,background-color .22s ease,border-color .22s ease,box-shadow .22s ease,color .22s ease}button:active:not(:disabled){transform:scale(.98)}button:disabled{cursor:not-allowed}table{width:100%;min-width:680px;border-collapse:collapse;font-size:13px}th{padding:14px;border-bottom:1px solid #e6ebee;color:#66737c;font-size:11px;font-weight:700;text-align:left}td{padding:16px 14px;border-bottom:1px solid #edf1f3;color:#3f4d57;font-weight:500}tbody tr:last-child td{border-bottom:0}::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-thumb{border-radius:99px;background:#d8dde1}
+@keyframes pageEnter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes cardEnter{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes livePulse{0%,100%{opacity:1}50%{opacity:.48}}
+.page-enter{animation:pageEnter .38s cubic-bezier(.22,1,.36,1) both}.stagger-card{opacity:0;animation:cardEnter .38s cubic-bezier(.22,1,.36,1) forwards}.live-pulse{animation:livePulse 1.8s ease-in-out infinite}.stat-icon svg{transition:transform .28s ease}.group:hover .stat-icon svg{transform:scale(1.08)}
+@media(max-width:1023px){aside{box-shadow:0 20px 60px rgba(30,45,58,.14)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.page-enter,.stagger-card,.live-pulse{animation:none!important;opacity:1}.stat-icon svg,button{transition:none!important}}
+
